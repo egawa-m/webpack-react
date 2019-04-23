@@ -1,0 +1,112 @@
+@import "./mediaqueries.css";
+
+:global(:root) {
+  --layout-col-1: calc(100% / 12);
+  --layout-col-2: calc(100% / 12 * 2);
+  --layout-col-3: calc(100% / 12 * 3);
+  --layout-col-4: calc(100% / 12 * 4);
+  --layout-col-5: calc(100% / 12 * 5);
+  --layout-col-6: calc(100% / 12 * 6);
+  --layout-col-7: calc(100% / 12 * 7);
+  --layout-col-8: calc(100% / 12 * 8);
+  --layout-col-9: calc(100% / 12 * 9);
+  --layout-col-10: calc(100% / 12 * 10);
+  --layout-col-11: calc(100% / 12 * 11);
+  --layout-col-12: 100%;
+}
+
+:global .container {
+  margin: 0 auto;
+  padding: 0 calc(var(--space) * 2);
+  max-width: var(--container-size);
+}
+
+:global .box {
+  padding: calc(var(--space) * 2);
+  margin: calc(var(--space) * 2) 0;
+}
+
+:global .row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+:global .col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+:global .col-1 { flex: 0 0 var(--layout-col-1); max-width: var(--layout-col-1); }
+:global .col-2 { flex: 0 0 var(--layout-col-2); max-width: var(--layout-col-2); }
+:global .col-3 { flex: 0 0 var(--layout-col-3); max-width: var(--layout-col-3); }
+:global .col-4 { flex: 0 0 var(--layout-col-4); max-width: var(--layout-col-4); }
+:global .col-5 { flex: 0 0 var(--layout-col-5); max-width: var(--layout-col-5); }
+:global .col-6 { flex: 0 0 var(--layout-col-6); max-width: var(--layout-col-6); }
+:global .col-7 { flex: 0 0 var(--layout-col-7); max-width: var(--layout-col-7); }
+:global .col-8 { flex: 0 0 var(--layout-col-8); max-width: var(--layout-col-8); }
+:global .col-9 { flex: 0 0 var(--layout-col-9); max-width: var(--layout-col-9); }
+:global .col-10 { flex: 0 0 var(--layout-col-10); max-width: var(--layout-col-10); }
+:global .col-11 { flex: 0 0 var(--layout-col-11); max-width: var(--layout-col-11); }
+:global .col-12 { flex: 0 0 var(--layout-col-12); max-width: var(--layout-col-12); }
+
+@media (--viewport-mobile-l) {
+  :global .col-xs-1 { flex: 0 0 var(--layout-col-1); max-width: var(--layout-col-1); }
+  :global .col-xs-2 { flex: 0 0 var(--layout-col-2); max-width: var(--layout-col-2); }
+  :global .col-xs-3 { flex: 0 0 var(--layout-col-3); max-width: var(--layout-col-3); }
+  :global .col-xs-4 { flex: 0 0 var(--layout-col-4); max-width: var(--layout-col-4); }
+  :global .col-xs-5 { flex: 0 0 var(--layout-col-5); max-width: var(--layout-col-5); }
+  :global .col-xs-6 { flex: 0 0 var(--layout-col-6); max-width: var(--layout-col-6); }
+  :global .col-xs-7 { flex: 0 0 var(--layout-col-7); max-width: var(--layout-col-7); }
+  :global .col-xs-8 { flex: 0 0 var(--layout-col-8); max-width: var(--layout-col-8); }
+  :global .col-xs-9 { flex: 0 0 var(--layout-col-9); max-width: var(--layout-col-9); }
+  :global .col-xs-10 { flex: 0 0 var(--layout-col-10); max-width: var(--layout-col-10); }
+  :global .col-xs-11 { flex: 0 0 var(--layout-col-11); max-width: var(--layout-col-11); }
+  :global .col-xs-12 { flex: 0 0 var(--layout-col-12); max-width: var(--layout-col-12); }
+}
+
+@media (--viewport-tablet) {
+  :global .col-s-1 { flex: 0 0 var(--layout-col-1); max-width: var(--layout-col-1); }
+  :global .col-s-2 { flex: 0 0 var(--layout-col-2); max-width: var(--layout-col-2); }
+  :global .col-s-3 { flex: 0 0 var(--layout-col-3); max-width: var(--layout-col-3); }
+  :global .col-s-4 { flex: 0 0 var(--layout-col-4); max-width: var(--layout-col-4); }
+  :global .col-s-5 { flex: 0 0 var(--layout-col-5); max-width: var(--layout-col-5); }
+  :global .col-s-6 { flex: 0 0 var(--layout-col-6); max-width: var(--layout-col-6); }
+  :global .col-s-7 { flex: 0 0 var(--layout-col-7); max-width: var(--layout-col-7); }
+  :global .col-s-8 { flex: 0 0 var(--layout-col-8); max-width: var(--layout-col-8); }
+  :global .col-s-9 { flex: 0 0 var(--layout-col-9); max-width: var(--layout-col-9); }
+  :global .col-s-10 { flex: 0 0 var(--layout-col-10); max-width: var(--layout-col-10); }
+  :global .col-s-11 { flex: 0 0 var(--layout-col-11); max-width: var(--layout-col-11); }
+  :global .col-s-12 { flex: 0 0 var(--layout-col-12); max-width: var(--layout-col-12); }
+}
+
+@media (--viewport-laptop-m) {
+  :global .col-m-1 { flex: 0 0 var(--layout-col-1); max-width: var(--layout-col-1); }
+  :global .col-m-2 { flex: 0 0 var(--layout-col-2); max-width: var(--layout-col-2); }
+  :global .col-m-3 { flex: 0 0 var(--layout-col-3); max-width: var(--layout-col-3); }
+  :global .col-m-4 { flex: 0 0 var(--layout-col-4); max-width: var(--layout-col-4); }
+  :global .col-m-5 { flex: 0 0 var(--layout-col-5); max-width: var(--layout-col-5); }
+  :global .col-m-6 { flex: 0 0 var(--layout-col-6); max-width: var(--layout-col-6); }
+  :global .col-m-7 { flex: 0 0 var(--layout-col-7); max-width: var(--layout-col-7); }
+  :global .col-m-8 { flex: 0 0 var(--layout-col-8); max-width: var(--layout-col-8); }
+  :global .col-m-9 { flex: 0 0 var(--layout-col-9); max-width: var(--layout-col-9); }
+  :global .col-m-10 { flex: 0 0 var(--layout-col-10); max-width: var(--layout-col-10); }
+  :global .col-m-11 { flex: 0 0 var(--layout-col-11); max-width: var(--layout-col-11); }
+  :global .col-m-12 { flex: 0 0 var(--layout-col-12); max-width: var(--layout-col-12); }
+}
+
+@media (--viewport-laptop-l) {
+  :global .col-l-1 { flex: 0 0 var(--layout-col-1); max-width: var(--layout-col-1); }
+  :global .col-l-2 { flex: 0 0 var(--layout-col-2); max-width: var(--layout-col-2); }
+  :global .col-l-3 { flex: 0 0 var(--layout-col-3); max-width: var(--layout-col-3); }
+  :global .col-l-4 { flex: 0 0 var(--layout-col-4); max-width: var(--layout-col-4); }
+  :global .col-l-5 { flex: 0 0 var(--layout-col-5); max-width: var(--layout-col-5); }
+  :global .col-l-6 { flex: 0 0 var(--layout-col-6); max-width: var(--layout-col-6); }
+  :global .col-l-7 { flex: 0 0 var(--layout-col-7); max-width: var(--layout-col-7); }
+  :global .col-l-8 { flex: 0 0 var(--layout-col-8); max-width: var(--layout-col-8); }
+  :global .col-l-9 { flex: 0 0 var(--layout-col-9); max-width: var(--layout-col-9); }
+  :global .col-l-10 { flex: 0 0 var(--layout-col-10); max-width: var(--layout-col-10); }
+  :global .col-l-11 { flex: 0 0 var(--layout-col-11); max-width: var(--layout-col-11); }
+  :global .col-l-12 { flex: 0 0 var(--layout-col-12); max-width: var(--layout-col-12); }
+}

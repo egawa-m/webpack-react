@@ -1,0 +1,52 @@
+$facebook-name: 'facebook';
+$facebook-x: -82px;
+$facebook-y: 0px;
+$facebook-offset-x: -82px;
+$facebook-offset-y: 0px;
+$facebook-width: 18px;
+$facebook-height: 38px;
+$facebook-total-width: 100px;
+$facebook-total-height: 56px;
+$facebook-image: '../img/sprite.png';
+$facebook: -82px 0px -82px 0px 18px 38px 100px 56px '../img/sprite.png' 'facebook';
+.icon-facebook { width: 18px; height: 38px; background-position: -82px 0px; background-image: url(../img/sprite.png); }
+.iconr-facebook { width: calc(18px / 2); height: calc(38px / 2); background-position: calc(-82px / 2) calc(0px / 2); background-image: url(../img/sprite.png); background-size: calc(100px / 2) calc(56px / 2); }
+$google-name: 'google';
+$google-x: 0px;
+$google-y: 0px;
+$google-offset-x: 0px;
+$google-offset-y: 0px;
+$google-width: 36px;
+$google-height: 38px;
+$google-total-width: 100px;
+$google-total-height: 56px;
+$google-image: '../img/sprite.png';
+$google: 0px 0px 0px 0px 36px 38px 100px 56px '../img/sprite.png' 'google';
+.icon-google { width: 36px; height: 38px; background-position: 0px 0px; background-image: url(../img/sprite.png); }
+.iconr-google { width: calc(36px / 2); height: calc(38px / 2); background-position: calc(0px / 2) calc(0px / 2); background-image: url(../img/sprite.png); background-size: calc(100px / 2) calc(56px / 2); }
+$pagetop-name: 'pagetop';
+$pagetop-x: 0px;
+$pagetop-y: -42px;
+$pagetop-offset-x: 0px;
+$pagetop-offset-y: -42px;
+$pagetop-width: 14px;
+$pagetop-height: 14px;
+$pagetop-total-width: 100px;
+$pagetop-total-height: 56px;
+$pagetop-image: '../img/sprite.png';
+$pagetop: 0px -42px 0px -42px 14px 14px 100px 56px '../img/sprite.png' 'pagetop';
+.icon-pagetop { width: 14px; height: 14px; background-position: 0px -42px; background-image: url(../img/sprite.png); }
+.iconr-pagetop { width: calc(14px / 2); height: calc(14px / 2); background-position: calc(0px / 2) calc(-42px / 2); background-image: url(../img/sprite.png); background-size: calc(100px / 2) calc(56px / 2); }
+$twitter-name: 'twitter';
+$twitter-x: -40px;
+$twitter-y: 0px;
+$twitter-offset-x: -40px;
+$twitter-offset-y: 0px;
+$twitter-width: 38px;
+$twitter-height: 32px;
+$twitter-total-width: 100px;
+$twitter-total-height: 56px;
+$twitter-image: '../img/sprite.png';
+$twitter: -40px 0px -40px 0px 38px 32px 100px 56px '../img/sprite.png' 'twitter';
+.icon-twitter { width: 38px; height: 32px; background-position: -40px 0px; background-image: url(../img/sprite.png); }
+.iconr-twitter { width: calc(38px / 2); height: calc(32px / 2); background-position: calc(-40px / 2) calc(0px / 2); background-image: url(../img/sprite.png); background-size: calc(100px / 2) calc(56px / 2); }

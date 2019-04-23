@@ -1,0 +1,57 @@
+@import "../../../css/mediaqueries.css";
+@import "../../../css/mixin.css";
+
+.list {
+  max-width: 400px;
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 0 20px;
+  & > li {
+    background-color: color(#F4C51E alpha(.1));
+    & + li {
+      margin-top: 20px;
+    }
+    & > a {
+      display: flex;
+    }
+  }
+}
+
+.photo {
+  width: 100px;
+  flex: 0 0 auto;
+  & > img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.text {
+  flex: 1 1 auto;
+  padding: 20px;
+  position: relative;
+}
+
+.title {
+  color: var(--color-main);
+  margin: 0;
+}
+
+.icon {
+  @mixin sprite $twitter, 2;
+  /* composes: iconr-twitter from "../../../css/sprite.css"; */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/*---------------------------------------------
+* PC
+---------------------------------------------*/
+@media (--viewport-tablet) {
+
+  .class {
+  }
+
+}

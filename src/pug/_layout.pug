@@ -1,0 +1,20 @@
+block vars
+  //- include _config.pug
+  - 
+    var pages = {
+      top: {
+        url: 'index.html',
+        name: 'Top',
+        title: 'Top',
+        description: 'Top',
+        keywords: 'Top',
+        image: ''
+      }
+    }
+block var
+doctype html
+html(lang="ja")
+  head
+    include include/_head.pug
+  body
+    block body

@@ -1,0 +1,26 @@
+@import "../../../css/mediaqueries.css";
+
+.item {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  padding: 20px;
+  margin: 0;
+}
+
+.photo {
+}
+
+
+/*---------------------------------------------
+* PC
+---------------------------------------------*/
+@media (--viewport-tablet) {
+
+  .class {
+  }
+
+}

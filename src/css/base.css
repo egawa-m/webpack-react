@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+@import "normalize.css";
+@import "./variables.css";
+@import "./keyframe.css";
+
+:global html {
+  font-family: var(--font-family-default);
+  font-size: 62.5%;
+}
+
+:global body {
+  background-color: var(--color-white);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-l);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: var(--line-height-base);
+  -webkit-text-size-adjust: 100%;
+}
+
+:global a {
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+:global *,
+:global *::after,
+:global *::before {
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 0;
+}
+
+:global .loader {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 8px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  margin: auto;
+  animation: load 1.3s infinite linear, fade 0 ease;;
+}

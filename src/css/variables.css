@@ -1,0 +1,122 @@
+:global(:root) {
+  --grid: 8px;
+
+  --breakpoint_mobile_s: 320px;
+  --breakpoint_mobile_m: 375px;
+  --breakpoint_mobile_l: 425px;
+  --breakpoint_tablet: 768px;
+  --breakpoint_laptop_m: 1024px;
+  --breakpoint_laptop_l: 1440px;
+  --breakpoint_laptop_l: 1280px;
+
+  --depth-fixed: 1000;
+
+  /* https://material.io/design/color/text-legibility.html#text-backgrounds */
+  --color-high-emphasis: 83%;
+  --color-medium-emphasis: 60%;
+  --color-disabled-emphasis: 38%;
+  --color-tint-emphasis: 12%;
+  --color-error: #B00020;
+
+  --paper-d1: 0 0 2px 0 rgba(0, 0, 0, .14), 0 2px 2px 0 rgba(0, 0, 0, .12), 0 1px 3px 0 rgba(0, 0, 0, .2);
+  --paper-d2: 0 2px 4px 0 rgba(0, 0, 0, .14), 0 3px 4px 0 rgba(0, 0, 0, .12), 0 1px 5px 0 rgba(0, 0, 0, .2);
+  --paper-d3: 0 3px 3px 0 rgba(0, 0, 0, .14), 0 3px 4px 0 rgba(0, 0, 0, .12), 0 1px 8px 0 rgba(0, 0, 0, .2);
+  --paper-d4: 0 2px 4px 0 rgba(0, 0, 0, .14), 0 4px 5px 0 rgba(0, 0, 0, .12), 0 1px 10px 0 rgba(0, 0, 0, .2);
+  --paper-d6: 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12), 0 3px 5px 0 rgba(0, 0, 0, .2);
+  --paper-d8: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 3px rgba(0, 0, 0, .12), 0 4px 5px 0 rgba(0, 0, 0, .2);
+  --paper-d9: 0 9px 12px 1px rgba(0, 0, 0, .14), 0 3px 16px 2px rgba(0, 0, 0, .12), 0 5px 6px 0 rgba(0, 0, 0, .2);
+  --paper-d12: 0 12px 17px 2px rgba(0, 0, 0, .14), 0 5px 22px 4px rgba(0, 0, 0, .12), 0 7px 8px 0 rgba(0, 0, 0, .2);
+  --paper-d16: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px 0 rgba(0, 0, 0, .2);
+  --paper-d24: 0 24px 38px 3px rgba(0, 0, 0, .14), 0 9px 46px 8px rgba(0, 0, 0, .12), 0 11px 15px 0 rgba(0, 0, 0, .2);
+  --edge-tinted: 1px solid color(#fff alpha(.2));
+  --edge-shaded: 1px solid color(#000 alpha(.2));
+
+  /* motion (https://material.io/guidelines/motion/duration-easing.html) */
+  --bezier: .4, 0, .2, 1;
+  --bezier-deceleration: 0, 0, .2, 1;
+  --bezier-acceleration: .4, 0, 1, 1;
+
+  --curves: cubic-bezier(var(--bezier));
+  --curves-deceleration: cubic-bezier(var(--bezier-deceleration));
+  --curves-acceleration: cubic-bezier(var(--bezier-acceleration));
+
+  --duration: 250ms;
+  --duration-simple: 100ms;
+  --duration-expand: 250ms;
+  --duration-collapse: 200ms;
+  --duration-large-expand: 300ms;
+  --duration-large-collapse: 250ms;
+  
+
+  /* color
+   * -------------------------------------------------- */
+  --color-text-invert: #FFFFFF;
+  --color-text-primary: rgba(0,0,0,0.8);
+  --color-text-secondary: rgba(0,0,0,0.4);
+  --color-text-disabled: rgba(0,0,0, var(--color-disabled-emphasis));
+
+  --color-primary: #0070B5;
+  --color-primary-variant: #BBD3E8;
+  --color-on-primary: #FFFFFF;
+  --color-on-primary-variant: var(--color-text-primary);
+  --color-error: #ED3300;
+  --color-error-variant: #FADDD6;
+  --color-on-error: #FFFFFF;
+  --color-on-error-variant: var(--color-text-primary);
+
+  --color-background: #F5F5F5;
+  --color-background-alpha: rgba(0,0,0,.12);
+  --color-surface: #FFFFFF;
+  --color-dividers: rgba(0,0,0,.12);
+  --color-dividers-on-primary: rgba(255,255,255,.20);
+  --color-overlay: rgba(0,0,0,.5);
+
+  --color-link: var(--color-primary);
+
+  --color-main: #F4C51E;
+  --color-white: #FFFFFF;
+
+  /* typography
+   * -------------------------------------------------- */
+  --font-family-default: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Kaku Gothic ProN", "游ゴシック Medium", "メイリオ", meiryo, sans-serif;
+  --font-size-0: 0; /* 0 */
+  --font-size-2s: 1rem; /* 10 */
+  --font-size-s: 1.2rem; /* 12 */
+  --font-size-ms: 1.3rem; /* 13 */
+  --font-size-m: 1.4rem; /* 14 */
+  --font-size-l: 1.6rem; /* 16 */
+  --font-size-2l: 1.8rem; /* 18 */
+  --font-size-3l: 2rem; /* 20 */
+  --font-size-4l: 2.2rem; /* 22 */
+  --font-size-5l: 2.4rem; /* 24 */
+  --line-height-base: 1.2;
+
+  /* layout
+   * -------------------------------------------------- */
+  --space: var(--grid);
+  --space-min: calc(var(--space) / 2);
+  --container-size: 1040px;
+  --navigation-size: 280px;
+
+  /* depth
+   * -------------------------------------------------- */
+  --depth-navigation-bar: calc(var(--depth-fixed) - 10);
+  --depth-float-ui: var(--depth-fixed);
+  --depth-modal: calc(var(--depth-fixed) + 30);
+  --depth-notification: calc(var(--depth-fixed) + 40);
+  --depth-signal: calc(var(--depth-fixed) + 50);
+  --depth-frontmost: calc(var(--depth-fixed) + 100);
+
+  /* icon
+   * -------------------------------------------------- */
+  --icon-size-s: 16px;
+  --icon-size-m: 24px;
+  --icon-size-l: 32px;
+  --icon-size-2l: 48px;
+
+  /* shadow -------------------------------------------------- */
+  --shadow: var(--paper-d1);
+  --shadow-s: var(--paper-d1);
+  --shadow-m: var(--paper-d2);
+  --shadow-l: var(--paper-d3);
+}
